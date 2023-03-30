@@ -1,0 +1,353 @@
+/* * {
+} */
+html,
+body {
+    margin: 0px;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    user-select: none;
+}
+
+
+/* Style the top navigation bar */
+.header {
+    height: 50px;
+    flex-shrink: 0;
+    display: flex;
+    flex-direction: column;
+    overflow: hidden;
+    background-color: white;
+    border-radius: 5px;
+}
+
+/* Style the header links */
+.header a {
+    color: black;
+    float: left;
+    padding: 5px 5px;
+    text-decoration: none;
+    text-align: justify;
+    border-radius: 5px;
+
+}
+
+.header a.active {
+    background-color: #ddd;
+    color: rgb(0, 0, 0);
+    border-radius: 5px;
+}
+
+/* Change color on hover */
+.header a:hover:not(.active) {
+    background-color: #ddd;
+    border-radius: 5px;
+}
+
+.header-top {
+    display: flex;
+    color: rgb(0, 0, 0);
+    flex-grow: 1;
+    text-align: justify;
+    border-bottom: 1px solid #8e8888;
+}
+
+.header-bottom {
+    flex-grow: 3;
+    margin-left: 6px;
+}
+
+.header-bottom a {
+    height: 100%;
+    margin-right: 3px;
+}
+
+.file {
+    display: flex;
+    User-select: none;
+    margin-left: 5px;
+    margin-right: 5px;
+    flex-direction: row;
+    text-align: justify;
+    align-items: center;
+    border-style: solid;
+    border-width: 1px;
+    border-color: #8e8888;
+}
+
+.tool {
+    display: flex;
+    User-select: none;
+    align-items: center;
+    border-style: solid;
+    border-width: 1px;
+    border-color: #8e8888;
+}
+
+.file:hover {
+    background-color: #ddd;
+}
+
+.tool:hover {
+    background-color: #ddd;
+}
+
+/* Style the content */
+.content {
+    display: flex;
+    flex-shrink: 0;
+    height: 130px;
+    flex-direction: column;
+    background-color: #ddd;
+    /* Should be removed. Only for demonstration */
+    margin-left: 5px;
+    margin-right: 5px;
+    margin-bottom: 5px;
+    border-radius: 7px;
+    border-style: solid;
+    border-width: 1px;
+    border-color: #8e8888;
+}
+
+.tools {
+    display: flex;
+    height: 20px;
+    width: 100%;
+    margin: 0 auto;
+    text-align: center;
+    border-bottom: 1px solid #8e8888;
+}
+
+.tool_bottom {
+    display: flex;
+    height: 65px;
+    flex-grow: 1;
+    flex-direction: row;
+    margin-right: 5px;
+}
+
+.tool_1 {
+    width: 270px;
+    display: flex;
+    flex-direction: row;
+    padding-left: 5px;
+    padding-right: 5px;
+}
+
+.tool_2 {
+    display: flex;
+    flex-grow: 7;
+    margin-left: 5px;
+    margin-right: 25px;
+}
+
+.smallblock {
+    width: 80px;
+    height: 80px;
+    border-radius: 7px;
+    text-align: center;
+    background-size: 100%;
+    background-color: white;
+    margin-left: 5px;
+    border-style: solid;
+    border-width: 1px;
+    border-color: #8e8888;
+}
+.smallblock:active{
+    background-color: #8e8888;
+}
+.smallblock:focus {
+    border-style: solid;
+    border-color: #408ec3;
+}
+
+.smallblock:hover {
+    background-color: rgb(235, 235, 235);
+}
+
+.zone {
+    background-image: url(../image/Zone.png);
+}
+
+.edge {
+    background-image: url(../image/Edge.png);
+}
+
+.dense {
+    background-image: url(../image/Dense.png);
+}
+
+.generate {
+    background-image: url(../image/Generate.png);
+}
+
+.textblock {
+    text-align: center;
+    margin-top: 0px;
+}
+
+.tool_3 {
+    display: flex;
+    width: 90px;
+}
+
+/* Style the footer */
+.footer {
+    display: flex;
+    flex-grow: 1;
+    background-color: #ddd;
+    padding: 10px;
+    margin-left: 5px;
+    margin-right: 5px;
+    border-radius: 5px;
+    border-style: solid;
+    border-width: 1px;
+    border-color: #8e8888;
+}
+
+.data {
+    display: flex;
+    flex-direction: column;
+    width: 240px;
+}
+
+.data-top {
+    height: 25px;
+    text-align: center;
+    border-style: solid;
+    border-width: 1px;
+    border-color: #8e8888;
+}
+
+.data-content {
+    background-color: #8e8888;
+}
+
+.mesh {
+    height: 25px;
+    background-color: #ddd;
+    text-align: center;
+    border-style: solid;
+    border-width: 1px;
+    border-color: #8e8888;
+}
+
+.mesh:hover {
+    background-color: #8e8888;
+}
+
+.mesh-content {
+    background-color: white;
+    height: 320px;
+    border-style: solid;
+    border-width: 1px;
+    border-color: #8e8888;
+}
+
+.data-foot {
+    display: flex;
+    flex-grow: 1;
+    flex-direction: column;
+}
+
+.data-info {
+    height: 25px;
+    background-color: #ddd;
+    text-align: center;
+    border-style: solid;
+    border-width: 1px;
+    border-color: #8e8888;
+}
+
+.data-info-content {
+    display: flex;
+    flex: 1;
+    border-style: solid;
+    border-width: 1px;
+    border-color: #8e8888;
+}
+
+.parameter {
+    display: flex;
+    flex-direction: column;
+    margin-left: 8px;
+    width: 280px;
+}
+
+.parameter-top {
+    height: 25px;
+    text-align: center;
+    border-style: solid;
+    border-width: 1px;
+    border-color: #8e8888;
+}
+
+.parameter-content {
+    background-color: #ddd;
+    height: 340px;
+    border-style: solid;
+    border-width: 1px;
+    border-color: #8e8888;
+}
+
+.parameter-foot {
+    flex: 1;
+    border-style: solid;
+    border-width: 1px;
+    border-color: #8e8888;
+}
+
+.g-parameter {
+    height: 25px;
+    border-style: solid;
+    border-width: 1px;
+    border-color: #8e8888;
+    text-align: center;
+}
+
+.g-parameter-content {
+    display: flex;
+}
+
+.g-h {
+    width: 50px;
+    float: right;
+    flex-shrink: 0;
+}
+
+.g-t {
+    text-align: right;
+}
+
+.g-p-c {
+    width: 60px;
+}
+
+.g-p-c:focus {
+    border-style: solid;
+    border-color: #408ec3;
+}
+
+.preview {
+    display: flex;
+    flex-direction: column;
+    margin-left: 8px;
+    flex-grow: 1;
+}
+
+.preview-top {
+    height: 25px;
+    text-align: center;
+    border-style: solid;
+    border-width: 1px;
+    border-color: #8e8888;
+}
+
+.preview-content {
+    background-color: white;
+    flex: 1;
+    border-style: solid;
+    border-width: 1px;
+    border-color: #8e8888;
+}
+

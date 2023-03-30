@@ -1,0 +1,137 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <title>mesh</title>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link type="text/css" href="../static/css/mesh.css" rel="stylesheet">
+    <script src="../static/js/mesh.js" type="text/javascript"></script>
+</head>
+
+<body>
+
+    <div class="header">
+        <div class="header-top">
+            <div class="file">文件</div>
+            <div class="tool">工具</div>
+        </div>
+        <div class="header-bottom">
+            <a href="./index.html" >模型</a>
+            <a href="./mesh.html" class="active">网格</a>
+        </div>
+    </div>
+
+    <div class="content">
+        <div class="tools">
+            <h1 style="margin: 0 auto; text-align: center;font-size:100%">tools</h1>
+        </div>
+        <div class="tool_bottom">
+            <div class="tool_1">
+                <div>
+                    <button type="button" class="smallblock zone"></button>
+                    <p class="textblock">zone</p>
+                </div>
+                <div>
+                    <button type="button" class="smallblock edge"></button>
+                    <p class="textblock">edge</p>
+                </div>
+                <div>
+                    <button type="button" class="smallblock dense"></button>
+                    <p class="textblock">dense</p>
+                </div>
+            </div>
+            <div class="tool_2">
+                <div>
+                    <button type="button" class="smallblock"></button>
+                    <p class="textblock"></p>
+                </div>
+                <div>
+                    <button type="button" class="smallblock"></button>
+                    <p class="textblock"></p>
+                </div>
+                <div>
+                    <button type="button" class="smallblock"></button>
+                    <p class="textblock"></p>
+                </div>
+                <div>
+                    <button type="button" class="smallblock"></button>
+                    <p class="textblock"></p>
+                </div>
+                <div>
+                    <button type="button" class="smallblock "></button>
+                    <p class="textblock"></p>
+                </div>
+                <button type="button" class="smallblock"></button>
+                <button type="button" class="smallblock"></button>
+                
+            </div>
+            <div class="tool_3">
+                <div>
+                    <button type="button" class="smallblock generate"></button>
+                    <p class="textblock">generate</p>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="footer">
+        <div class="data">
+            <div class="data-top">
+                data
+            </div>
+            <div class="data-content">
+                <div class="mesh">mesh</div>
+                <div class="mesh-content"></div>
+            </div>
+            <div class="data-foot">
+                <div class="data-info">datainfo</div>
+                <div class="data-info-content"></div>
+            </div>
+        </div>
+        <div class="parameter">
+            <div class="parameter-top">
+                parameter
+            </div>
+            <div class="parameter-content">
+            </div>
+            <div class="parameter-foot">
+                <div class="g-parameter">global parameter</div>
+                <div class="g-parameter-content">
+                    <form>
+                        <table>
+                            <tr>
+                                <td class="g-t">hmin:</td>
+                                <td>
+                                    <input class="g-h" type="text" name="hmin">
+                                </td>
+                                <td class="g-t">hmax:</td>
+                                <td><input class="g-h" type="text" name="hmax"></td>
+                            </tr>
+                            <tr>
+                                <td class="g-t">hgrade:</td>
+                                <td><input class="g-h" type="text" name="hgrade"></td>
+                                <td class="g-t">iteration:</td>
+                                <td><input class="g-h" type="text" name="iteration"></td>
+                            </tr>
+                            <tr>
+                                <td>randline</td>
+                                <td></td>
+                                <td><button type="button" class="g-p-c">modify</button></td>
+                                <td><button type="button" class="g-p-c">confirm</button></td>
+                            </tr>
+                        </table>
+                        
+                    </form>
+                </div>
+            </div>
+        </div>
+        <div class="preview">
+            <div class="preview-top">preview</div>
+            <div class="preview-content"></div>
+        </div>
+    </div>
+    
+    </body>
+    
+    </html>
